@@ -19,12 +19,12 @@ def Login(driver):
         elementologin = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable ((By.ID, "ucLogarUsuario_txtLogin"))
         )
-        elementologin.send_keys("*************")
+        elementologin.send_keys("**********")
 
         elementosenha = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ID, "ucLogarUsuario_txtSenha"))
         )
-        elementosenha.send_keys("*******")
+        elementosenha.send_keys("********")
 
         elemento_ok = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ID, "ucLogarUsuario_btnLogar"))
